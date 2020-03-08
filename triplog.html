@@ -38,7 +38,7 @@ $(function() {
   background-image: url('/css/searchicon.png'); /* Add a search icon to input */
   background-position: 10px 12px; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
-  width: 80%; /* Full-width */
+  width: 85%; /* Full-width */
   font-size: 16px; /* Increase font-size */
   padding: 12px 20px 12px 40px; /* Add some padding */
   border: 1px solid #ddd; /* Add a grey border */
@@ -76,6 +76,27 @@ color:#000000;
 background-color:#EAF2D3;
 }
 
+	 /* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+} 
+	
+	
 table {
     counter-reset: rowNumber;
 }
@@ -93,7 +114,7 @@ table tr td:first-child::before {
 
 	</head>
 	<body>
-<p><input id="myInput" onkeyup="myFunction()" placeholder="Search for namess.." type="text" /></p>
+<p><input id="myInput" onkeyup="myFunction()" placeholder="Search by trip name..." type="text" /></p>
 
 
 
