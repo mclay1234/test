@@ -46,6 +46,32 @@ $(function() {
 }
 </style>
 
+		<style type="text/css">#note
+{
+font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+border-collapse: collapse;
+border:0px;
+margin-left: auto;
+margin-right: auto;
+background-color:rgba(0,0,0,0.6);
+}
+
+#note td, #year th
+{
+font-size:1em;
+padding:3px 18px 2px 20px;
+}
+
+#note th
+{
+font-size:1.1em;
+text-align:center;
+padding-top:5px;
+padding-bottom:5px;
+color:#ffffff;
+}
+</style>
+		
 <style type="text/css">#triplog
 {
 font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -99,7 +125,13 @@ a:active {
 	<body>
 <p><input id="myInput" onkeyup="myFunction()" placeholder="Search by trip name..." type="text" /></p>
 
-
+<p><table id="note">
+	<tbody>
+		<tr>
+			<th>Click on any heading to sort by that factor</th>
+		</tr>
+	</tbody>
+	</table></p>
 
 <table id="triplog" class="tablesorter">
 	<thead>
