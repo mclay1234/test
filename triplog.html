@@ -25,7 +25,17 @@ function myFunction() {
 }
 </script>
 
-
+<script>
+	function toggle() {
+ if( document.getElementById("hidethis").style.display=='none' ){
+   document.getElementById("hidethis").style.display = 'table-row'; // set to table-row instead of an empty string
+ }else{
+   document.getElementById("hidethis").style.display = 'none';
+ }
+}
+		</script>
+		
+		
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script src="https://mottie.github.io/tablesorter/dist/js/jquery.tablesorter.min.js"></script>
 <script>
@@ -125,6 +135,9 @@ a:active {
 	<body>
 <p><input id="myInput" onkeyup="myFunction()" placeholder="Search by trip name..." type="text" /></p>
 
+
+<span onClick="toggle();">toggle</span><br /><br />
+		
 <p><table id="note">
 	<tbody>
 		<tr>
@@ -170,7 +183,7 @@ a:active {
 <td>April 24, 2021</td>
 </tr>	
 
-<tr>
+<tr id="hidethis">
 <td>749</td>
 <td><a href="https://mattclay.zenfolio.com/gibbon_pass_peak_2021" target="_blank">Gibbon Pass Peak</a></td>
 <td>Banff</td>
@@ -190,7 +203,7 @@ a:active {
 <td>April 17, 2021</td>
 </tr>	
 		
-<tr>
+<tr id="hidethis">
 <td>747</td>
 <td><a href="https://mattclay.zenfolio.com/high_noon_sandy_mcnab_hills_2021" target="_blank">High Noon and Sandy McNab Hills</a></td>
 <td>Kananaskis – Highway 546</td>
