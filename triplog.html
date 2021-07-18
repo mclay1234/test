@@ -24,7 +24,16 @@ function myFunction() {
   }
 }
 </script>
+
 		
+<script>
+	$(document).ready(function(){
+    $(".toggler").click(function(e){
+        e.preventDefault();
+        $('.cat'+$(this).attr('data-prod-cat')).toggle();
+    });
+});
+		</script>
 		
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script src="https://mottie.github.io/tablesorter/dist/js/jquery.tablesorter.min.js"></script>
@@ -151,7 +160,7 @@ a:active {
 
 
 <tr>
-<td>751</td>
+<td><a href="#" class="toggler" data-prod-cat="1">751<a></td>
 <td><a href="https://mattclay.zenfolio.com/horsethief_horseshoe_canyons" target="_blank">Horseshoe Canyon</a></td>
 <td>Alberta prairie & badlands</td>
 <td>Hike</td>
@@ -170,7 +179,7 @@ a:active {
 <td>April 24, 2021</td>
 </tr>	
 
-<tr>
+<tr class="cat1" style="display:none">
 <td>749</td>
 <td><a href="https://mattclay.zenfolio.com/gibbon_pass_peak_2021" target="_blank">Gibbon Pass Peak</a></td>
 <td>Banff</td>
@@ -180,7 +189,7 @@ a:active {
 <td>April 20, 2021</td>
 </tr>	
 
-<tr>
+<tr class="cat1" style="display:none">
 <td>748</td>
 <td><a href="https://mattclay.zenfolio.com/jap_mountain" target="_blank">Jap Mountain</a></td>
 <td>Ya Ha Tinda</td>
